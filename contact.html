@@ -1,364 +1,186 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>联系我们 - 深圳市建装冠美软装艺术有限公司</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand logo" href="index.html">建装冠美</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">关于我们</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">服务项目</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">案例展示</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">联系我们</a>
-                    </li>
-                </ul>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>建装冠美软装</h1>
             </div>
-        </div>
-    </nav>
-
-    <!-- 页面标题 -->
-    <section class="page-header py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="display-4">联系我们</h1>
-                    <p class="lead">期待与您的合作</p>
-                </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="services.html">服务项目</a></li>
+                <li><a href="cases.html">案例展示</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- 联系信息 -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 class="section-title mb-4">联系我们</h2>
-                    <form id="contactForm">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="name" class="form-label">姓名</label>
-                                <input type="text" class="form-control" id="name" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="phone" class="form-label">电话</label>
-                                <input type="tel" class="form-control" id="phone" required>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">邮箱</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">主题</label>
-                            <input type="text" class="form-control" id="subject" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">留言</label>
-                            <textarea class="form-control" id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">提交留言</button>
-                    </form>
-                </div>
-                <div class="col-md-4">
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="container">
+                <h1>联系我们</h1>
+                <p>期待与您合作</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
                     <div class="contact-info">
-                        <h4 class="mb-4">联系信息</h4>
-                        <div class="contact-item mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>地址</h5>
-                                <p>深圳市南山区科技园</p>
-                            </div>
+                        <h2>联系信息</h2>
+                        <div class="contact-item">
+                            <h3>公司地址</h3>
+                            <p>深圳市南山区科技园南区</p>
+                            <p>设计创意大厦A座15楼</p>
                         </div>
-                        <div class="contact-item mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-phone fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>电话</h5>
-                                <p>0755-88888888</p>
-                            </div>
+                        <div class="contact-item">
+                            <h3>联系电话</h3>
+                            <p>业务咨询: 0755-8888 8888</p>
+                            <p>设计咨询: 0755-8888 9999</p>
                         </div>
-                        <div class="contact-item mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-envelope fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>邮箱</h5>
-                                <p>info@jianzhuangguanmei.com</p>
-                            </div>
+                        <div class="contact-item">
+                            <h3>电子邮箱</h3>
+                            <p>业务合作: business@szjzgm.com</p>
+                            <p>设计咨询: design@szjzgm.com</p>
                         </div>
-                        <div class="contact-item mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-clock fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>工作时间</h5>
-                                <p>周一至周五: 9:00 - 18:00</p>
-                                <p>周六: 10:00 - 17:00</p>
-                            </div>
+                        <div class="contact-item">
+                            <h3>工作时间</h3>
+                            <p>周一至周五: 9:00 - 18:00</p>
+                            <p>周六: 9:00 - 17:00</p>
+                            <p>周日: 休息</p>
                         </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>在线咨询</h2>
+                        <form id="consultation-form">
+                            <div class="form-group">
+                                <label for="name">姓名 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">联系电话 *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">电子邮箱</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="project-type">项目类型</label>
+                                <select id="project-type" name="project-type">
+                                    <option value="">请选择项目类型</option>
+                                    <option value="residential">住宅设计</option>
+                                    <option value="office">办公空间</option>
+                                    <option value="commercial">商业空间</option>
+                                    <option value="hotel">酒店设计</option>
+                                    <option value="other">其他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="area">项目面积 (㎡)</label>
+                                <input type="number" id="area" name="area" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">预算范围</label>
+                                <select id="budget" name="budget">
+                                    <option value="">请选择预算范围</option>
+                                    <option value="10-30">10-30万</option>
+                                    <option value="30-50">30-50万</option>
+                                    <option value="50-100">50-100万</option>
+                                    <option value="100+">100万以上</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">项目需求描述 *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">提交咨询</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 地图 -->
-    <section class="py-0">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.5729018309!2d113.76328283359376!3d22.55647840000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340177535e5e22c1%3A0x68d9cafa1140a4b3!2z5p2x5Lqs6YeR5riv6KGM5Lia5aSn5a24!5e0!3m2!1szh-CN!2scn!4v1690363116366!5m2!1szh-CN!2scn" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="map-section">
+            <div class="container">
+                <h2>我们的位置</h2>
+                <div class="map-placeholder">
+                    <div class="map-info">
+                        <h3>深圳市建装冠美软装艺术有限公司</h3>
+                        <p>📍 地址: 深圳市南山区科技园南区设计创意大厦A座15楼</p>
+                        <p>🚇 地铁: 1号线高新园站A出口步行5分钟</p>
+                        <p>🚌 公交: 科技园站、高新园站</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 底部 -->
-    <footer class="bg-dark text-white py-4">
+        <section class="faq-section">
+            <div class="container">
+                <h2>常见问题</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>设计流程需要多长时间？</h3>
+                        <p>一般设计流程需要2-4周，具体时间根据项目复杂程度而定。我们会根据您的需求制定详细的时间计划。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>如何开始合作？</h3>
+                        <p>您可以通过电话、邮箱或在线表单联系我们，我们会安排专业设计师与您沟通，了解需求后提供初步方案。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>设计费用如何计算？</h3>
+                        <p>设计费用根据项目面积、复杂程度和服务范围而定。我们会提供透明的报价单，确保您清楚了解每一项费用。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>是否提供后期维护服务？</h3>
+                        <p>是的，我们提供项目完成后的维护服务，确保设计效果的长期保持。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5 class="logo-footer">建装冠美</h5>
-                    <p>深圳市建装冠美软装艺术有限公司</p>
-                    <p>专业软装设计，打造理想空间</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>建装冠美软装</h3>
+                    <p>专业软装设计艺术公司，致力于为客户打造理想的生活与工作空间。</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>快速链接</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">首页</a></li>
-                        <li><a href="about.html" class="text-white">关于我们</a></li>
-                        <li><a href="services.html" class="text-white">服务项目</a></li>
-                        <li><a href="portfolio.html" class="text-white">案例展示</a></li>
-                        <li><a href="contact.html" class="text-white">联系我们</a></li>
-                    </ul>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>电话: 0755-8888 8888</p>
+                    <p>邮箱: info@szjzgm.com</p>
+                    <p>地址: 深圳市南山区科技园</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>联系我们</h5>
-                    <p><i class="fas fa-map-marker-alt me-2"></i> 深圳市南山区科技园</p>
-                    <p><i class="fas fa-phone me-2"></i> 0755-88888888</p>
-                    <p><i class="fas fa-envelope me-2"></i> info@jianzhuangguanmei.com</p>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <a href="index.html">首页</a>
+                    <a href="about.html">关于我们</a>
+                    <a href="services.html">服务项目</a>
+                    <a href="cases.html">案例展示</a>
+                    <a href="contact.html">联系我们</a>
                 </div>
             </div>
-            <hr class="bg-white">
-            <div class="text-center">
-                <p>&copy; 2023 深圳市建装冠美软装艺术有限公司. 版权所有.</p>
+            <div class="copyright">
+                <p>&copy; 2024 深圳市建装冠美软装艺术有限公司. 版权所有.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我们 - 深圳市建装冠美软装艺术有限公司</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand logo" href="index.html">建装冠美</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">关于我们</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">服务项目</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">案例展示</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">联系我们</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- 页面标题 -->
-    <section class="page-header py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="display-4">联系我们</h1>
-                    <p class="lead">期待与您的合作</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 联系信息 -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 class="section-title mb-4">联系我们</h2>
-                    <form id="contactForm">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="name" class="form-label">姓名</label>
-                                <input type="text" class="form-control" id="name" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="phone" class="form-label">电话</label>
-                                <input type="tel" class="form-control" id="phone" required>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">邮箱</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">主题</label>
-                            <input type="text" class="form-control" id="subject" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">留言</label>
-                            <textarea class="form-control" id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">提交留言</button>
-                    </form>
-                </div>
-                <div class="col-md-4">
-                    <div class="contact-info">
-                        <h4 class="mb-4">联系信息</h4>
-                        <div class="contact-item mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>地址</h5>
-                                <p>深圳市南山区科技园</p>
-                            </div>
-                        </div>
-                        <div class="contact-item mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-phone fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>电话</h5>
-                                <p>0755-88888888</p>
-                            </div>
-                        </div>
-                        <div class="contact-item mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-envelope fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>邮箱</h5>
-                                <p>info@jianzhuangguanmei.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-clock fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>工作时间</h5>
-                                <p>周一至周五: 9:00 - 18:00</p>
-                                <p>周六: 10:00 - 17:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 地图 -->
-    <section class="py-0">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.5729018309!2d113.76328283359376!3d22.55647840000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340177535e5e22c1%3A0x68d9cafa1140a4b3!2z5p2x5Lqs6YeR5riv6KGM5Lia5aSn5a24!5e0!3m2!1szh-CN!2scn!4v1690363116366!5m2!1szh-CN!2scn" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 底部 -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5 class="logo-footer">建装冠美</h5>
-                    <p>深圳市建装冠美软装艺术有限公司</p>
-                    <p>专业软装设计，打造理想空间</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>快速链接</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">首页</a></li>
-                        <li><a href="about.html" class="text-white">关于我们</a></li>
-                        <li><a href="services.html" class="text-white">服务项目</a></li>
-                        <li><a href="portfolio.html" class="text-white">案例展示</a></li>
-                        <li><a href="contact.html" class="text-white">联系我们</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>联系我们</h5>
-                    <p><i class="fas fa-map-marker-alt me-2"></i> 深圳市南山区科技园</p>
-                    <p><i class="fas fa-phone me-2"></i> 0755-88888888</p>
-                    <p><i class="fas fa-envelope me-2"></i> info@jianzhuangguanmei.com</p>
-                </div>
-            </div>
-            <hr class="bg-white">
-            <div class="text-center">
-                <p>&copy; 2023 深圳市建装冠美软装艺术有限公司. 版权所有.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
->>>>>>> ea23a87871f4187fc0b3639b1e44b1a8feb18d49
 </html>
